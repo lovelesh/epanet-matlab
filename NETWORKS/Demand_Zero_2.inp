@@ -1,0 +1,364 @@
+[TITLE]
+Scenario: Base 
+Date: 6/2/2014 4:57:00 PM 
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 21              	783         	0           	                	;
+ 19              	749.13      	0           	                	;
+ 17              	742.02      	0           	                	;
+ 15              	741.85      	0           	                	;
+ 13              	756.95      	0           	                	;
+ 3               	741.12      	0           	                	;
+ 52              	783         	0           	                	;
+ 10              	749.13      	28.125      	Peak2.5            	;
+ 8               	741.85      	56.97       	Peak2.5            	;
+ 7               	742.02      	14.4        	Peak2.5            	;
+ 4               	756.95      	79.83    	    Peak2.5            	;
+ 2               	741.12      	37.5        	Peak2.5            	;
+ DMA4150_VeeranagereExOHT	749.13      	0           	                	;
+ DMA4849_NRMohallaExOHT	742.02      	0           	                	;
+ DMA4950_NRMohallaNewOHT	741.85      	0           	                	;
+ DMA5200_UdayagiriNewOHT	741.12      	0           	                	;
+ DVRJ-11         	748         	0           	                	;
+ DVRJ-8          	755         	0           	                	;
+ DMA5400_RajivnagarIStageNewOHT	756.95      	0           	                	;
+ DVRJ-3          	757.5       	0           	                	;
+ DVRJ-12         	748.232116699219	0           	                	;
+ DVRJ-13         	736.858703613281	0           	                	;
+ DVRJ-10         	740.784484863281	0           	                	;
+ DVRJ-7          	756.9       	0           	                	;
+ DVRJ-9          	738.314514160156	0           	                	;
+ 301-B           	758.665958712697	-217        	                	;
+ 47              	757.5       	0           	                	;
+ 1               	0           	0           	                	;
+ 5               	0           	0           	                	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
+ 34              	783         	20.1801        	18          	24          	14.5        	2972.33934937764	                	;
+ Veeranageeri    	749.13      	14.1069        	11.9999999999999	18          	10.3        	999.874693858024	                	;
+ NR_mohalla2     	742.02      	10.1359        	9           	15          	7.3         	376.68481314705	                	;
+ NR_mohalla1     	741.85      	17.3902        	15          	21          	14.5        	2476.9494578147	                	;
+ Rajiv_nagar_I  	773.35      	11.8258        	9           	15.5        	17          	2042.82062299676	                	;
+ Tippu_park      	741.12      	17.2958        	15          	21          	14.5        	2476.9494578147	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ DVRTMP23        	DVRJ-7          	DMA5400_RajivnagarIStageNewOHT	14.2250807730333	300         	130         	0           	Open  	;
+ DVRTMP4         	DVRJ-3          	DVRJ-7          	686.523162728496	575         	130         	0           	Open  	;
+ 84              	21              	34              	10          	500         	130         	0           	Open    	;
+ 79              	19              	Veeranageeri    	10          	300         	130         	0           	Open  	;
+ 77              	17              	NR_mohalla2     	1000        	250         	100         	0           	Open  	;
+ 75              	15              	NR_mohalla1     	10          	350         	130         	0           	Open  	;
+ 73              	13              	Rajiv_nagar_I	  	10          	300         	130         	0           	Open  	;
+ 55              	3               	Tippu_park      	10          	250         	130         	0           	Open  	;
+ 10              	Veeranageeri    	10              	10          	300         	130         	0           	Open  	;
+ 8               	NR_mohalla2     	7               	10          	250         	130         	0           	Open  	;
+ 7               	NR_mohalla1     	8               	10          	350         	130         	0           	Open  	;
+ 1               	Rajiv_nagar_I	  	4               	1000        	300         	130         	0           	Open  	;
+ 2               	Tippu_park      	2               	10          	150         	130         	0           	Open  	;
+ DVRTMP18        	DVRJ-11         	DVRJ-12         	122.003156956608	373         	130         	0           	Open  	;
+ DVRTMP17        	DVRJ-10         	DVRJ-11         	1209.02815545849	474         	130         	0           	Open  	;
+ DVRTMP14        	DVRJ-8          	DVRJ-9          	728.089282727841	474         	130         	0           	Open  	;
+ DVRTMP3         	34              	47              	14.7513166684416	500         	130         	0           	Open  	;
+ DVRTMP19        	DVRJ-12         	DMA4150_VeeranagereExOHT	496.74086029739	300         	130         	0           	Open  	;
+ DVRTMP22        	DVRJ-13         	DMA4950_NRMohallaNewOHT	192.002838512832	350         	130         	0           	Open  	;
+ DVRTMP21        	DVRJ-13         	DMA4849_NRMohallaExOHT	177.747966106501	250         	130         	0           	Open  	;
+ DVRTMP20        	5               	DVRJ-13         	1302.74491567486	424         	130         	0           	Open  	;
+ DVRTMP15        	DVRJ-9          	DVRJ-10         	396.843852863401	474         	130         	0           	Open  	;
+ DVRTMP16        	DVRJ-9          	DMA5200_UdayagiriNewOHT	538.54854369901	250         	130         	0           	Open  	;
+ 4               	1               	DVRJ-8          	618         	575         	130         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+ 62              	301-B           	52              	HEAD 62	SPEED 1	;
+ 61              	301-B           	52              	HEAD 61	SPEED 1	;
+ 60              	301-B           	52              	HEAD 60	SPEED 1	;
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+ 80              	52              	21              	500         	FCV 	8.45        	0           	;
+ 78              	DMA4150_VeeranagereExOHT	19              	300         	FCV 	10           	0           	;
+ 76              	DMA4849_NRMohallaExOHT	17              	250         	FCV 	15          	0           	;
+ 74              	DMA4950_NRMohallaNewOHT	15              	350         	FCV 	322         	0           	;
+ 72              	DMA5400_RajivnagarIStageNewOHT	13              	300         	FCV 	200        	0           	;
+ 40              	DMA5200_UdayagiriNewOHT	3               	250         	FCV 	5           	0           	;
+ 6               	47              	DVRJ-3          	600         	FCV 	76.6        	0           	;
+ 3               	DVRJ-7          	1               	575         	FCV 	743         	0           	;
+ 5               	DVRJ-10         	5               	424         	FCV 	21.7        	0           	;
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+ 61              	Closed
+ 80			Open
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ Peak2.5         	0.2         	0.2         	0.2         	0.2         	0.4         	1           
+ Peak2.5         	2           	2.5         	2.5         	2           	1           	1           
+ Peak2.5         	0.8         	0.8         	1           	0.6         	0.8         	1           
+ Peak2.5         	1.5         	1.5         	1           	0.8         	0.6         	0.4         
+ 
+[CURVES]
+;ID              	X-Value     	Y-Value
+;PUMP: PUMP: PUMP:
+ 62              	150         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 62E             	150         	75          
+;PUMP: PUMP: PUMP:
+ 61              	150         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 61E             	150         	75          
+;PUMP: PUMP: PUMP:
+ 60              	150         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 60E             	150         	75          
+;PUMP: PUMP: PUMP:
+ 59              	170         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 59E             	170         	75          
+;PUMP: PUMP: PUMP:
+ 58              	170         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 58E             	170         	75          
+;PUMP: PUMP: PUMP:
+ 56              	170         	30          
+;PUMP: PUMP: EFFICIENCY:
+ 56E             	170         	75          
+;PUMP: PUMP: PUMP:
+ 23              	578         	98          
+;PUMP: PUMP: EFFICIENCY:
+ 23E             	578         	75          
+;PUMP: PUMP: PUMP:
+ 22              	578         	98          
+;PUMP: PUMP: EFFICIENCY:
+ 22E             	578         	75          
+;PUMP: PUMP: PUMP:
+ 21              	578         	98          
+;PUMP: PUMP: EFFICIENCY:
+ 21E             	578         	75          
+
+[CONTROLS]
+
+
+[RULES]
+
+
+[ENERGY]
+ Global Efficiency  	75
+ Global Price       	0
+ Demand Charge      	0
+ Pump 	62              	Efficiency	62E
+ Pump 	61              	Efficiency	61E
+ Pump 	60              	Efficiency	60E
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0
+ Global Wall           	0
+ Limiting Potential    	0
+ Roughness Correlation 	0
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	0
+ Hydraulic Timestep 	0:05
+ Quality Timestep   	0:00
+ Pattern Timestep   	1
+ Pattern Start      	0:00
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	12 am
+ Statistic          	NONE
+
+[REPORT]
+ Status             	No
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	H-W
+ Specific Gravity   	0.998
+ Viscosity          	1
+ Trials             	40
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	1
+ Demand Multiplier  	1
+ Emitter Exponent   	0.5
+ Quality            	NONE mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord         	Y-Coord
+ 21              	683775.78       	1364232.75      
+ 19              	680530.24       	1362861.11      
+ 17              	680942.27       	1363555.84      
+ 15              	681027.12       	1363560.83      
+ 13              	683561.70       	1363641.21      
+ 3               	682034.22       	1363374.75      
+ 52              	683795.12       	1364220.26      
+ 10              	680519.96       	1362952.77      
+ 8               	681051.65       	1363639.90      
+ 7               	680921.81       	1363637.05      
+ 4               	683631.37       	1363607.16      
+ 2               	682177.41       	1363564.02      
+ DMA4150_VeeranagereExOHT	680553.45       	1362825.38      
+ DMA4849_NRMohallaExOHT	680985.89       	1363525.17      
+ DMA4950_NRMohallaNewOHT	680995.26       	1363523.67      
+ DMA5200_UdayagiriNewOHT	682075.43       	1363290.23      
+ DVRJ-11         	680993.70       	1362403.83      
+ DVRJ-8          	683074.72       	1363421.51      
+ DMA5400_RajivnagarIStageNewOHT	683540.10       	1363669.48      
+ DVRJ-3          	683788.30       	1364157.32      
+ DVRJ-12         	680920.16       	1362500.96      
+ DVRJ-13         	681053.38       	1363384.67      
+ DVRJ-10         	682078.71       	1362907.60      
+ DVRJ-7          	683536.45       	1363683.25      
+ DVRJ-9          	682420.94       	1363106.44      
+ 301-B           	683895.95       	1364226.27      
+ 47              	683783.71       	1364172.03      
+ 1               	683524.22       	1363637.47      
+ 5               	682044.16       	1362968.43      
+ 34              	683763.92       	1364235.67      
+ Veeranageeri    	680521.36       	1362882.52      
+ NR_mohalla2     	680927.43       	1363578.04      
+ NR_mohalla1     	681044.76       	1363578.04      
+ Rajiv_nagar_I  	683578.96       	1363633.19      
+ Tippu_park      	682024.45       	1363432.19      
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+ DVRTMP4         	683789.27       	1364130.31      
+ DVRTMP4         	683725.40       	1364110.79      
+ DVRTMP4         	683576.54       	1363867.43      
+ DVRTMP4         	683654.52       	1363717.55      
+ DVRTMP4         	683651.31       	1363714.17      
+ DVRTMP4         	683618.33       	1363695.64      
+ DVRTMP4         	683604.03       	1363688.87      
+ DVRTMP4         	683598.56       	1363686.72      
+ DVRTMP4         	683588.61       	1363686.04      
+ DVRTMP4         	683576.38       	1363683.34      
+ DVRTMP18        	680989.23       	1362407.67      
+ DVRTMP18        	680968.53       	1362437.55      
+ DVRTMP18        	680923.38       	1362497.05      
+ DVRTMP17        	682070.23       	1362900.90      
+ DVRTMP17        	681906.47       	1362782.67      
+ DVRTMP17        	681875.47       	1362759.75      
+ DVRTMP17        	681865.46       	1362748.78      
+ DVRTMP17        	681851.32       	1362738.78      
+ DVRTMP17        	681809.85       	1362710.48      
+ DVRTMP17        	681806.34       	1362710.19      
+ DVRTMP17        	681802.28       	1362708.78      
+ DVRTMP17        	681788.69       	1362699.88      
+ DVRTMP17        	681760.91       	1362681.27      
+ DVRTMP17        	681723.44       	1362660.19      
+ DVRTMP17        	681672.70       	1362638.14      
+ DVRTMP17        	681608.11       	1362612.97      
+ DVRTMP17        	681497.43       	1362570.35      
+ DVRTMP17        	681425.81       	1362539.56      
+ DVRTMP17        	681362.63       	1362513.22      
+ DVRTMP17        	681323.11       	1362498.34      
+ DVRTMP17        	681275.06       	1362480.29      
+ DVRTMP17        	681249.69       	1362471.99      
+ DVRTMP17        	681143.34       	1362443.70      
+ DVRTMP17        	681042.38       	1362417.64      
+ DVRTMP14        	683046.19       	1363405.54      
+ DVRTMP14        	682982.21       	1363376.62      
+ DVRTMP14        	682903.98       	1363349.90      
+ DVRTMP14        	682855.61       	1363330.68      
+ DVRTMP14        	682822.35       	1363318.95      
+ DVRTMP14        	682744.96       	1363289.43      
+ DVRTMP14        	682715.83       	1363276.56      
+ DVRTMP14        	682590.39       	1363206.11      
+ DVRTMP14        	682464.25       	1363129.22      
+ DVRTMP19        	680862.65       	1362583.76      
+ DVRTMP19        	680792.81       	1362642.49      
+ DVRTMP19        	680573.30       	1362816.22      
+ DVRTMP19        	680558.02       	1362817.13      
+ DVRTMP22        	681057.08       	1363394.27      
+ DVRTMP22        	681083.94       	1363418.63      
+ DVRTMP22        	681001.42       	1363528.66      
+ DVRTMP21        	680965.67       	1363507.26      
+ DVRTMP20        	682043.54       	1362969.59      
+ DVRTMP20        	682015.71       	1363019.90      
+ DVRTMP20        	681982.55       	1363087.36      
+ DVRTMP20        	681968.54       	1363250.48      
+ DVRTMP20        	681961.19       	1363249.54      
+ DVRTMP20        	681777.35       	1363230.52      
+ DVRTMP20        	681771.25       	1363229.04      
+ DVRTMP20        	681745.64       	1363227.33      
+ DVRTMP20        	681731.98       	1363228.06      
+ DVRTMP20        	681701.24       	1363232.21      
+ DVRTMP20        	681621.06       	1363254.79      
+ DVRTMP20        	681527.69       	1363278.13      
+ DVRTMP20        	681440.48       	1363300.09      
+ DVRTMP20        	681302.62       	1363339.45      
+ DVRTMP20        	681287.25       	1363343.60      
+ DVRTMP20        	681243.83       	1363351.40      
+ DVRTMP20        	681168.46       	1363365.31      
+ DVRTMP20        	681065.77       	1363382.62      
+ DVRTMP15        	682412.78       	1363101.89      
+ DVRTMP15        	682313.61       	1363054.21      
+ DVRTMP15        	682225.57       	1363004.66      
+ DVRTMP15        	682170.18       	1362973.92      
+ DVRTMP15        	682154.93       	1362964.39      
+ DVRTMP15        	682134.89       	1362947.77      
+ DVRTMP16        	682405.10       	1363105.42      
+ DVRTMP16        	682259.75       	1363373.03      
+ DVRTMP16        	682083.80       	1363275.49      
+ 4               	683522.46       	1363571.97      
+ 4               	683212.97       	1363500.96      
+ 62              	683815.12       	1364207.28      
+ 61              	683816.57       	1364215.05      
+ 60              	683817.71       	1364228.46      
+ 80              	683785.45       	1364226.51      
+ 78              	680541.85       	1362843.25      
+ 76              	680964.08       	1363540.51      
+ 74              	681011.19       	1363542.25      
+ 72              	683550.90       	1363655.35      
+ 40              	682054.83       	1363332.49      
+ 3               	683525.64       	1363680.84      
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	679826.61       	1360906.78      	686472.30       	1365995.27      
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
