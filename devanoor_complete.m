@@ -20,7 +20,7 @@ valves_index = d.LinkValveIndex;
 tanks = d.NodeTankIndex;
 
 % Setting the setting-read file
-settings = xlsread('Settings-12-hour.xls');
+settings = xlsread('Settings-all-report.xls');
 
 % Simulate all times
 d.solveCompleteHydraulics;
@@ -69,7 +69,7 @@ d.openHydraulicAnalysis;
 d.initializeHydraulicAnalysis;
 
 % Variable initialisation
-tstep=1; P=[];T=[]; D=[]; H=[];F=[];E=[]; TM=[];TH=[];temp=[];hour_counter=1;
+tstep=1; P=[];T=[]; D=[]; H=[];F=[];E=[]; TM=[];TH=[];VF=[];temp=[];hour_counter=1;
 
 % Valve initialisation
 [valves_setting] = d.getLinkInitialSetting;
@@ -95,9 +95,10 @@ while (tstep>0) %&& hour_counter<12 )
     E=[E; d.getNodeElevations];
     TH = [TH; H(end,48:end) - E(end,48:end) - TM(end,48:end)];
     F=[F; d.getLinkFlows];
+    VF = [VF; F(end,48:end)];
     T=[T; t];
     tstep=d.nextHydraulicAnalysisStep;
-    if ((t > 0 && t < 86400) && ~rem(t,7200))
+    if ((t > 0 && t < 86400) && ~rem(t,3600))
         hour_counter = hour_counter+1;
         % Setting valve values
             d.setLinkSettings(valves_setting(hour_counter,:));
@@ -124,9 +125,11 @@ Perc(:,11) = fillperc(TH(:,11),14.5,1000000);
 
 % Plot the tank levels
 figure(1)
-plot(T/3600,Perc(:,1:11),'DisplayName','Perc(:,1:11)','YDataSource','Perc(:,1:11)');
+plot(T/3600,Perc(:,1:end),'DisplayName','Perc(:,1:11)','YDataSource','Perc(:,1:11)');
 
-
+% Plot the Valve Flow
+figure(2)
+plot(T/3600,VF(:,1:end),'DisplayName','VF(:,1:12)','YDataSource','VF(:,1:12)');
 % d.writeReport
 % movefile('TestReport.txt',[pwd,'/RESULTS/','TestReport-devanoor.txt']);
 
