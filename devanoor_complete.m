@@ -69,7 +69,8 @@ d.openHydraulicAnalysis;
 d.initializeHydraulicAnalysis;
 
 % Variable initialisation
-tstep=1; P=[];T=[]; D=[]; H=[];F=[];E=[]; TM=[];TH=[];VF=[];temp=[];hour_counter=1;
+tstep=1; P=[];T=[]; D=[]; H=[];F=[];E=[]; TM=[];TH=[];VF=[];temp=[];
+hour_counter=1;
 
 % Valve initialisation
 [valves_setting] = d.getLinkInitialSetting;
