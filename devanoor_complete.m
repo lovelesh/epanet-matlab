@@ -126,11 +126,13 @@ Perc(:,11) = fillperc(TH(:,11),14.5,1000000);
 
 % Plot the tank levels
 figure(1)
+subplot(2,1,1);
 plot(T/3600,Perc(:,1:end),'DisplayName','Perc(:,1:11)','YDataSource','Perc(:,1:11)');
 
 % Plot the Valve Flow
-figure(2)
-plot(T/3600,VF(:,1:end),'DisplayName','VF(:,1:12)','YDataSource','VF(:,1:12)');
+%figure(2)
+subplot(2,2,2);
+plot(T/3600,VF(:,1:end),'DisplayName','VF(:,2:12)','YDataSource','VF(:,2:12)');
 % d.writeReport
 % movefile('TestReport.txt',[pwd,'/RESULTS/','TestReport-devanoor.txt']);
 
