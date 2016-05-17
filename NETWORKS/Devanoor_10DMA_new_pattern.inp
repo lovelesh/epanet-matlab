@@ -16,16 +16,16 @@ Date: 6/2/2014 4:57:00 PM
  3               	741.12      	0           	                	;
  1               	738.58      	0           	                	;
  52              	758.3       	0           	                	;
- 20              	741.41      	34.02       	Peak2.5           	                	;
- 18              	740.29      	39.6          	Peak2.5           	                	;
- 16              	725.65      	9.9           	Peak2.5           	                	;
- 14              	725.03      	14.4          	Peak2.5           	                	;
- 12              	738.58      	19.62       	Peak2.5          	                	;
- 10              	749.13      	28.125         	Peak2.5           	                	;
- 8               	741.85      	56.97        	Peak2.5           	                	;
- 7               	742.02      	14.4          	Peak2.5           	                	;
- 4               	756.95      	79.83         	Peak2.5           	                	;
- 2               	741.12      	37.5         	Peak2.5           	                	;
+ 20              	741.41      	34.02       	Peak2.4         	;
+ 18              	740.29      	39.6          	Peak2.4         	;
+ 16              	725.65      	9.9           	Peak2.4         	;
+ 14              	725.03      	14.4          	Peak2.4         	;
+ 12              	738.58      	19.62       	Peak2.4       	                	;
+ 10              	749.13      	28.125         	Peak2.4         	;
+ 8               	741.85      	56.97        	Peak2.4         	;
+ 7               	742.02      	14.4          	Peak2.4         	;
+ 4               	756.95      	79.83         	Peak2.4         	;
+ 2               	741.12      	37.5         	Peak2.4         	;
  DMA4700_SubashnagarExOHT	725.65      	0           	                	;
  DMA4748A_RajendranagarExOHT	741.41      	0           	                	;
  DMA4748_RajendranagarNewOHT	740.29      	0           	                	;
@@ -42,38 +42,37 @@ Date: 6/2/2014 4:57:00 PM
  DVRJ-1          	757.5       	0           	                	;
  DVRJ-2          	757.5       	0           	                	;
  DVRJ-3          	757.5       	0           	                	;
- DVRJ-5          	735.73      	0           	                	;
- DVRJ-6          	740.58      	0           	                	;
- DVRJ-12         	748.23      	0           	                	;
- DVRJ-13         	736.85      	0           	                	;
- DVRJ-10         	740.78      	0           	                	;
+ DVRJ-5          	735.737854003906	0           	                	;
+ DVRJ-6          	740.586120605469	0           	                	;
+ DVRJ-12         	748.232116699219	0           	                	;
+ DVRJ-13         	736.858703613281	0           	                	;
+ DVRJ-10         	740.784484863281	0           	                	;
  DVRJ-7          	756.9       	0           	                	;
- DVRJ-9          	738.31      	0           	                	;
- 301-B           	758.66      	-334        	                	;
+ DVRJ-9          	738.314514160156	0           	                	;
+ 301-B           	758.665958712697	-334        	                	;
  22              	756.9       	0           	                	;
- 23              	757.5       	0           	                	;
 
 [RESERVOIRS]
 ;ID              	Head        	Pattern         
 
 [TANKS]
 ;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve
- 34              	758.3       	20.8637        	18          	24          	14.5        	2972.33934937764	                	;
- Rajendra_nagar2 	741.41      	14.8412        	12          	18          	14.5        	1981.55956625176	                	;
- Rajendra_nagar1 	740.29      	15.17          	12          	18.5        	17          	2723.76083066235	                	;
- Bademakan       	725.65      	14.708         	12          	18          	10.3        	999.874693858024	                	;
- Kesare          	725.03      	14.7042        	12          	18          	10.3        	999.874693858024	                	;
- Rajiv_nagar_II 	738.58      	17.8495        	15          	21          	14.5        	2476.9494578147	                	;
- Veeranageeri    	749.13      	14.7339        	12          	18          	10.3        	999.874693858024	                	;
- NR_mohalla2     	742.02      	11.6366        	9           	15          	7.3         	376.68481314705	                	;
- NR_mohalla1     	741.85      	17.8728        	15          	21          	14.5        	2476.9494578147	                	;
- Rajiv_nagar_I   	756.95      	12.181         	9           	15.5        	17          	2042.82062299676	                	;
- Tippu_park      	741.12      	17.8896       	15          	21          	14.5        	2476.9494578147	                	;
+ 34              	758.3       	20.9437        	18          	24          	14.5        	2972.33934937764	                	;
+ Rajendra_nagar2 	741.41      	14.9591        	12          	18          	14.5        	1981.55956625176	                	;
+ Rajendra_nagar1 	740.29      	15.2625     	12.0000000000001	18.5        	17          	2723.76083066235	                	;
+ Bademakan       	725.65      	14.8427        	12          	18          	10.3        	999.874693858024	                	;
+ Kesare          	725.03      	14.8129     	12          	17.9999999999999	10.3        	999.874693858024	                	;
+ Rajiv_nagar_II		738.58      	17.9718        	15          	21          	14.5        	2476.9494578147	                	;
+ Veeranageeri    	749.13      	14.9003        	11.9999999999999	18          	10.3        	999.874693858024	                	;
+ NR_mohalla2     	742.02      	12.0135        	9           	15          	7.3         	376.68481314705	                	;
+ NR_mohalla1     	741.85      	17.9257        	15          	21          	14.5        	2476.9494578147	                	;
+ Rajiv_nagar_I   	756.95      	12.2469        	9           	15.5        	17          	2042.82062299676	                	;
+ Tippu_park      	741.12      	17.9783       	15          	21          	14.5        	2476.9494578147	                	;
 
 [PIPES]
 ;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
- DVRTMP23        	DVRJ-7          	DMA5400_RajivnagarIStageNewOHT	14.22       	300         	130         	0           	Open  	;
- DVRTMP4         	DVRJ-3          	DVRJ-7          	686.52      	575         	130         	0           	Open  	;
+ DVRTMP23        	DVRJ-7          	DMA5400_RajivnagarIStageNewOHT	14.2250807730333	300         	130         	0           	Open  	;
+ DVRTMP4         	DVRJ-3          	DVRJ-7          	686.523162728496	575         	130         	0           	Open  	;
  84              	21              	34              	10          	500         	130         	0           	Open  	;
  79              	19              	Veeranageeri    	10          	300         	130         	0           	Open  	;
  77              	17              	NR_mohalla2     	1000        	250         	100         	0           	Open  	;
@@ -84,39 +83,38 @@ Date: 6/2/2014 4:57:00 PM
  67              	6               	Bademakan       	10          	150         	130         	0           	Open  	;
  64              	5               	Kesare          	10          	200         	130         	0           	Open  	;
  55              	3               	Tippu_park      	10          	250         	130         	0           	Open  	;
- 11              	1               	Rajiv_nagar_II 		10          	300         	130         	0           	Open  	;
+ 11              	1               	Rajiv_nagar_II	 	10          	300         	130         	0           	Open  	;
  20              	Rajendra_nagar2 	20              	10          	250         	130         	0           	Open  	;
  18              	Rajendra_nagar1 	18              	10          	350         	130         	0           	Open  	;
  16              	Bademakan       	16              	10          	150         	130         	0           	Open  	;
  14              	Kesare          	14              	10          	200         	130         	0           	Open  	;
- 12              	Rajiv_nagar_II 		12              	10          	300         	130         	0           	Open  	;
+ 12              	Rajiv_nagar_II	 	12              	10          	300         	130         	0           	Open  	;
  10              	Veeranageeri    	10              	10          	300         	130         	0           	Open  	;
  8               	NR_mohalla2     	7               	10          	250         	130         	0           	Open  	;
  7               	NR_mohalla1     	8               	10          	350         	130         	0           	Open  	;
  1               	Rajiv_nagar_I   	4               	1000        	300         	130         	0           	Open  	;
  2               	Tippu_park      	2               	10          	150         	130         	0           	Open  	;
- DVRTMP18        	DVRJ-11         	DVRJ-12         	122.00      	373         	130         	0           	Open  	;
- DVRTMP17        	DVRJ-10         	DVRJ-11         	1209.02     	474         	130         	0           	Open  	;
- DVRTMP14        	DVRJ-8          	DVRJ-9          	728.08      	474         	130         	0           	Open  	;
+ DVRTMP18        	DVRJ-11         	DVRJ-12         	122.003156956608	373         	130         	0           	Open  	;
+ DVRTMP17        	DVRJ-10         	DVRJ-11         	1209.02815545849	474         	130         	0           	Open  	;
+ DVRTMP14        	DVRJ-8          	DVRJ-9          	728.089282727841	474         	130         	0           	Open  	;
  DVRTMP13        	22              	DVRJ-8          	606.50      	575         	130         	0           	Open  	;
- DVRTMP10        	DVRJ-5          	DMA4700_SubashnagarExOHT	713.51      	150         	130         	0           	Open  	;
- DVRTMP9         	DVRJ-5          	DMA4600_KesareExOHT	988.87      	200         	130         	0           	Open  	;
- DVRTMP8         	DVRJ-4          	DVRJ-5          	2115.03     	250         	130         	0           	Open  	;
- DVRTMP7         	DVRJ-4          	DMA5300RajivnagarIIStageExOHT	329.46      	300         	130         	0           	Open  	;
- DVRTMP6         	DVRJ-1          	DVRJ-4          	886.32      	350         	130         	0           	Open  	;
- DVRTMP12        	DVRJ-6          	DMA4748A_RajendranagarExOHT	48.45       	250         	130         	0           	Open  	;
- DVRTMP11        	DVRJ-6          	DMA4748_RajendranagarNewOHT	29.73       	350         	130         	0           	Open  	;
+ DVRTMP10        	DVRJ-5          	DMA4700_SubashnagarExOHT	713.513847043436	150         	130         	0           	Open  	;
+ DVRTMP9         	DVRJ-5          	DMA4600_KesareExOHT	988.872875154693	200         	130         	0           	Open  	;
+ DVRTMP8         	DVRJ-4          	DVRJ-5          	2115.0327936	250         	130         	0           	Open  	;
+ DVRTMP7         	DVRJ-4          	DMA5300RajivnagarIIStageExOHT	329.462373991546	300         	130         	0           	Open  	;
+ DVRTMP6         	DVRJ-1          	DVRJ-4          	886.325324098985	350         	130         	0           	Open  	;
+ DVRTMP1         	34              	DVRJ-1          	14.1632677015082	350         	130         	0           	Open  	;
+ DVRTMP2         	34              	DVRJ-2          	12.4690734416531	350         	130         	0           	Open  	;
+ DVRTMP3         	34              	DVRJ-3          	14.7513166684416	500         	130         	0           	Open  	;
+ DVRTMP12        	DVRJ-6          	DMA4748A_RajendranagarExOHT	48.4589877449441	250         	130         	0           	Open  	;
+ DVRTMP11        	DVRJ-6          	DMA4748_RajendranagarNewOHT	29.7380671533225	350         	130         	0           	Open  	;
  DVRTMP5         	DVRJ-2          	DVRJ-6          	3246.16684073216	424         	130         	0           	Open  	;
- DVRTMP19        	DVRJ-12         	DMA4150_VeeranagereExOHT	496.74      	300         	130         	0           	Open  	;
- DVRTMP22        	DVRJ-13         	DMA4950_NRMohallaNewOHT	192.00      	350         	130         	0           	Open  	;
- DVRTMP21        	DVRJ-13         	DMA4849_NRMohallaExOHT	177.74      	250         	130         	0           	Open  	;
- DVRTMP20        	DVRJ-10         	DVRJ-13         	1302.74     	424         	130         	0           	Open  	;
- DVRTMP15        	DVRJ-9          	DVRJ-10         	396.84      	474         	130         	0           	Open  	;
- DVRTMP16        	DVRJ-9          	DMA5200_UdayagiriNewOHT	538.54      	250         	130         	0           	Open  	;
- 9               	34              	23              	10          	500         	100         	0           	Open  	;
- 13              	23              	DVRJ-3          	10          	575         	130         	0           	Open  	;
- 15              	23              	DVRJ-2          	10          	424         	130         	0           	Open  	;
- 17              	23              	DVRJ-1          	10          	350         	130         	0           	Open  	;
+ DVRTMP19        	DVRJ-12         	DMA4150_VeeranagereExOHT	496.74086029739	300         	130         	0           	Open  	;
+ DVRTMP22        	DVRJ-13         	DMA4950_NRMohallaNewOHT	192.002838512832	350         	130         	0           	Open  	;
+ DVRTMP21        	DVRJ-13         	DMA4849_NRMohallaExOHT	177.747966106501	250         	130         	0           	Open  	;
+ DVRTMP20        	DVRJ-10         	DVRJ-13         	1302.74491567486	424         	130         	0           	Open  	;
+ DVRTMP15        	DVRJ-9          	DVRJ-10         	396.843852863401	474         	130         	0           	Open  	;
+ DVRTMP16        	DVRJ-9          	DMA5200_UdayagiriNewOHT	538.54854369901	250         	130         	0           	Open  	;
 
 [PUMPS]
 ;ID              	Node1           	Node2           	Parameters
@@ -147,67 +145,60 @@ Date: 6/2/2014 4:57:00 PM
 [STATUS]
 ;ID              	Status/Setting
  61              	Closed
- 78              	Open
+ 80              	Open
 
 [PATTERNS]
 ;ID              	Multipliers
 ;
- Peak2.5         	0.2         	0.2         	0.2         	0.2         	0.4         	1           
- Peak2.5         	2           	2.5         	2.5         	2           	1           	1           
- Peak2.5         	0.8         	0.8         	1           	0.6         	0.8         	1           
- Peak2.5         	1.5         	1.5         	1           	0.8         	0.6         	0.4         
- Peak2.5         	0.2         	0.2         	0.2         	0.2         	0.4         	1           
- Peak2.5         	2           	2.5         	2.5         	2           	1           	1           
- Peak2.5         	0.8         	0.8         	1           	0.6         	0.8         	1           
- Peak2.5         	1.5         	1.5         	1           	0.8         	0.6         	0.4         
+ Peak2.4         	0.3	      	    0.3         	0.35         	0.31         	0.3         	0.83           
+ Peak2.4         	1.57           	2.16         	2.39         	2.16           	1.5           	1.19           
+ Peak2.4         	1.07         	1.02         	0.95           	0.92         	0.93         	0.94           
+ Peak2.4         	1.01         	0.99         	1           	0.93         	0.52         	0.35         
+          
 
 [CURVES]
 ;ID              	X-Value     	Y-Value
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  62              	150         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  62E             	150         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  61              	150         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  61E             	150         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  60              	150         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  60E             	150         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  59              	170         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  59E             	170         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  58              	170         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  58E             	170         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  56              	170         	30          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  56E             	170         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  23              	578         	98          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  23E             	578         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  22              	578         	98          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  22E             	578         	75          
-;PUMP: PUMP: PUMP: PUMP: PUMP:
+;PUMP: PUMP: PUMP:
  21              	578         	98          
-;PUMP: PUMP: PUMP: PUMP: EFFICIENCY:
+;PUMP: PUMP: EFFICIENCY:
  21E             	578         	75          
 
 [CONTROLS]
 
 
-
-
 [RULES]
-
-
 
 
 [ENERGY]
@@ -247,7 +238,7 @@ Date: 6/2/2014 4:57:00 PM
  Duration           	0:00 
  Hydraulic Timestep 	0:05 
  Quality Timestep   	0:00 
- Pattern Timestep   	0:30 
+ Pattern Timestep   	1:00 
  Pattern Start      	0:00 
  Report Timestep    	1:00 
  Report Start       	0:00 
@@ -326,7 +317,6 @@ Date: 6/2/2014 4:57:00 PM
  DVRJ-9          	682420.94       	1363106.44      
  301-B           	683895.95       	1364226.27      
  22              	683526.48       	1363682.21      
- 23              	683773.37       	1364198.01      
  34              	683763.92       	1364235.67      
  Rajendra_nagar2 	680731.58       	1363932.81      
  Rajendra_nagar1 	680843.74       	1364044.97      
@@ -541,7 +531,6 @@ Date: 6/2/2014 4:57:00 PM
  DVRTMP16        	682405.10       	1363105.42      
  DVRTMP16        	682259.75       	1363373.03      
  DVRTMP16        	682083.80       	1363275.49      
- 17              	683770.05       	1364164.52      
  62              	683815.12       	1364207.28      
  61              	683816.57       	1364215.05      
  60              	683817.71       	1364228.46      

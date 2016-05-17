@@ -5,7 +5,7 @@ clc
 delete ('temp.inp','temp1.$$$','temp2.$$$','temp.txt','temp.out','hyd.out');
 
 % Input Files
-inpname='Devanoor_10DMA';
+inpname='Devanoor_10DMA_new_pattern';
 
 % Output file
 outfile = 'hyd.out';
@@ -20,7 +20,7 @@ valves_index = d.LinkValveIndex;
 tanks = d.NodeTankIndex;
 
 % Setting the setting-read file
-settings = xlsread('Settings-all-report.xls');
+settings = xlsread('Settings-all_new_pattern.xls');
 
 % Simulate all times
 d.solveCompleteHydraulics;
@@ -124,6 +124,7 @@ Perc(:,9) = fillperc(TH(:,9),14.5,1000000);
 Perc(:,10) = fillperc(TH(:,10),17,1500000);
 Perc(:,11) = fillperc(TH(:,11),14.5,1000000);
 
+%createfigure(T/3600, Perc(:,1:11), VF(:,1:12));
 % Plot the tank levels
 figure(1)
 subplot(2,1,1);
@@ -131,8 +132,8 @@ plot(T/3600,Perc(:,1:end),'DisplayName','Perc(:,1:11)','YDataSource','Perc(:,1:1
 
 % Plot the Valve Flow
 %figure(2)
-subplot(2,2,2);
-plot(T/3600,VF(:,1:end),'DisplayName','VF(:,2:12)','YDataSource','VF(:,2:12)');
+subplot(2,1,2);
+plot(T/3600,VF(:,1:end),'DisplayName','VF(:,1:12)','YDataSource','VF(:,1:12)');
 % d.writeReport
 % movefile('TestReport.txt',[pwd,'/RESULTS/','TestReport-devanoor.txt']);
 
